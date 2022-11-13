@@ -1,0 +1,48 @@
+body {
+    background-color:  beige;
+}
+
+.flex-container {
+    border: 1px solid green;
+    background-color: #ccc;
+    height: 400px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* flex-flow works a replacement of flex-direction and flex-wrap */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-content: center;
+}
+
+.flex-item {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    margin: 5px;
+}
+
+.flex-item:first-child {
+    background-color: lightblue;
+    order: 3;
+    flex-grow: 1;
+}
+
+.flex-item:nth-child(2) {
+    background-color: lightcoral;
+    order: 5;
+    flex-grow: 1;
+}
+
+.flex-item:nth-child(3) {
+    background-color: lightgreen;
+    order: 1;
+    flex-grow: 2;
+}
